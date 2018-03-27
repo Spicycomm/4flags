@@ -1,0 +1,70 @@
+@import "variables";
+
+.section-social
+	background: #fbbf1f
+	> .center
+		background: url("../images/background-4flags.png")
+		background-color: #FFF
+		padding: 40px  
+		display: flex
+		justify-content: space-evenly;
+		@media(max-width: 920px)
+			flex-direction: column
+			align-items: center
+	
+		.social
+			border-top: 5px solid $color-font-header
+			border-bottom: 5px solid $color-font-header
+			width: 350px
+			background: #f6f7f9
+
+			@media(max-width: 400px)
+				width: 300px
+
+		.social-form
+			background: $color-font-header
+			padding: 10px
+			text-align: center
+			color: $color-title-section
+			width: 420px
+			@media(max-width: 920px)
+				margin-top: 80px
+			@media(max-width: 450px)
+				width: 95%
+			@media(max-width: 395px)
+				width: 100%
+
+			h3
+				font-weight: bold
+				font-size: 1.6em
+				text-transform: uppercase
+				margin-bottom: 8px
+			p 
+				font-size: 1.2em
+				margin-bottom: 8px
+
+			input,
+			textarea
+				width: 100%
+				height: 40px
+				display: block
+				border: none
+				margin-bottom: 8px
+				text-transform: uppercase
+				text-align: center
+			
+			textarea
+				height: 60px
+				
+			input[type="submit"]
+				cursor: pointer
+				background: #9c9b9b
+				color: #FFF
+				font-weight: bold
+
+				&:hover
+					background: $color-title-section
+					transition: .3s linear
+
+		
+ 

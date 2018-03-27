@@ -1,0 +1,21 @@
+{
+  "name": "4flags",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Everton Lima <ever-tonlima@hotmail.com> (http://evertondelima.com.br/)",
+  "license": "MIT",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-compressor": "^0.1.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-htmlmin": "^3.0.0",
+    "gulp-imagemin": "^3.3.0",
+    "gulp-sass": "^3.1.0",
+    "gulp-tinyimg": "^0.1.0",
+    "gulp-watch": "^4.3.11"
+  }
+}

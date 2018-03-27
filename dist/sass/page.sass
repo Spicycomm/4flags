@@ -1,0 +1,185 @@
+@import "variables";
+
+
+.container-section 
+  	padding: 40px 30px
+  	clear: left
+  	border-radius: 0
+  	background: #FFF
+  	color: $color-font-section
+  	width: 1000px 
+  	min-height: 100%
+  	margin-left: -500px
+  	position: absolute
+  	top: 95px
+  	left: 50%
+  	z-index: 30
+  	display: none
+
+  	@media(max-width: 1000px)
+  		width: 100%
+  		left: 0
+  		margin-left: 0
+	
+.container-close-section
+  	float: right
+  	position: relative
+  	bottom: 22px
+  	left: 17px
+  	margin-left: 0
+
+  	.close-section
+    	text-align: center
+    	padding: 3px
+    	font-size: 1.8em
+    	background: $color-font-header
+    	color: $color-font-section
+    	border-radius: 50%
+    	display: block
+    	width: 50px
+    	height: 50px
+    	line-height: 35px
+
+.section
+  padding: 35px
+  border: 4px solid $color-font-header
+  border-radius: 20px
+  text-align: center
+  height: 100%
+  @media(max-width: 450px)
+  	padding: 0
+
+  .title-section
+    text-transform: uppercase
+    font-size: 30px
+    color: $color-title-section
+    margin-bottom: 60px
+    @media(max-width: 450px)
+    	margin-bottom: 20px
+    	font-size: 27px
+    &:before
+      content: url("../images/flags.svg")
+      display: block
+      margin-bottom: 40px
+      @media(max-width: 450px)
+      	width: 200px
+      	margin-right: auto
+      	margin-left: auto
+      	margin-top: 40px
+  p
+    font-size: 1.4em
+
+    @media(max-width: 530px)
+    	font-size: 1.1em
+
+  strong
+  	font-weight: bold
+  	color: rgba(0, 0, 0, 0.6)
+
+  h3
+    color: $color-title-section
+    font-size: 1.5em
+    margin: 30px auto 10px auto
+
+.section-mission,
+.section-vision
+	.title-section
+		margin-top: 140px
+		@media(max-width: 530px)
+    		margin-top: 70px
+
+
+.reputation-items
+	display: flex
+	flex-wrap: wrap
+	padding: 10px
+
+	.reputation-item
+		width: 50%
+		padding: 20px
+		@media(max-width: 750px)
+			width: 100%
+
+		h3
+			background: $color-font-header
+			width: 200px
+			display: table
+			padding: 10px 15px
+			text-transform: uppercase
+			border-radius: 20px
+			margin-bottom: 25px
+			@media(max-width: 450px)
+				width: auto
+				font-size: 1.2em
+
+
+.section-about
+	
+	p
+		margin-bottom: 10px
+		
+
+.methodology-list
+	
+	ol
+		display: flex 
+		flex-direction: column
+
+		li
+			width: 80%
+			align-self: center;
+
+			&:before
+				content: order
+				display: block;
+				color: $color-font-header
+
+			.methodology-item
+				margin-bottom: 30px
+
+				h3
+					font-size: 40px
+					font-weight: bold
+					@media(max-width: 450px)
+						font-size: 1.3em
+						
+				
+					&:before
+						color: $color-font-header
+						display: block
+						font-size: 60px
+						@media(max-width: 450px)
+							font-size: 2.4em
+				
+				p
+					margin-top: 20px
+					@media(max-width: 450px)
+						font-size: 1.15em
+
+			.methodology-homogeneous-classes
+				
+				h3
+					&:before
+						content: "1"
+
+			.qualified-teacherss
+				
+				h3
+					&:before
+						content: "2"
+
+			.teaching-resources
+				
+				h3
+					&:before
+						content: "3"
+
+			.learning-guarantee
+				
+				h3
+					&:before
+						content: "4"
+
+			
+
+

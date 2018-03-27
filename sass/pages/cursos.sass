@@ -1,0 +1,40 @@
+@import "../variables";
+
+.container-section.container-courses
+	border-radius: 0
+	background: #FFF
+	top: 95px
+
+.container-courses
+	.section-course
+		
+		.title-section
+			font-size: 40px
+
+		.courses-icon-section
+
+			ul
+				display: flex
+				flex-wrap: wrap
+				@media(max-width: 742px)
+					flex-direction: column
+				li
+					width: 50%
+					margin: 8px auto 28px auto
+
+					figure
+						text-align: center
+
+						img
+							@media(max-width: 600px)
+								width: 150px
+								
+
+
+						figcaption
+							margin-top: 18px
+
+							h4
+								font-size: 1.8em
+								color: #c5c5c5
+								text-transform: uppercase

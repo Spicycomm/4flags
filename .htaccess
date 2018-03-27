@@ -1,0 +1,4 @@
+RewriteEngine On
+RewriteRule ^admin/?$ admin.php [NC,L]
+RewriteRule ^cadastrar-evento/?$ cadastrar-evento.php [NC,L]
+RewriteRule ^contato/?$ contato.php [NC,L]

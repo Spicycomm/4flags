@@ -1,0 +1,41 @@
+@import "variables";
+
+.site-footer
+	background: #9c9b9b
+	> .center
+		display: flex
+		flex-wrap: no-wrap
+		flex-direction: row
+		justify-content: center
+		padding: 10px
+	
+		.logo-footer
+			margin-right: 100px
+			margin-top: 5%
+			@media(max-width: 935px) 
+				margin-right: 5px
+
+		.section-footer
+			padding: 10px
+			margin: 10px
+			@media(max-width: 860px)
+				display: none
+
+			h5
+				color: #3f3e3e
+				border-bottom: 2px solid #3f3f3f
+				margin-bottom: 10px
+				font-size: 1.15em
+				white-space: nowrap
+		
+			li
+				font-size: 1em
+				margin: 5px
+				white-space: nowrap
+
+				a
+					color: #FFF 
+
+.logo-footer
+	padding-top: 30px
+	text-align: center

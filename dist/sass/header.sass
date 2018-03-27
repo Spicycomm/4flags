@@ -1,0 +1,150 @@
+@import "variables";
+
+.site-header
+  background: $color-header
+  display: flex
+  justify-content: space-around
+  align-items: center
+  padding: 15px 11%
+  width: 100%
+  z-index: 50
+  @media(min-width: 1400px)
+    padding: 15px 15%
+  @media(max-width: 1100px)
+    flex-direction: column
+    transition: all .4s linear
+  @media(max-width: 600px)
+    padding: 10px 20px
+  @media(max-width: 420px)
+    padding: 5px 15px
+    
+  h1
+    margin-top: 10px
+
+.site-nav
+  @media(max-width: 1100px)
+    transition: all .4s linear
+    overflow: hidden
+    height: 0
+    width: 100%
+    
+
+  .nav-list
+    display: flex
+    border-bottom: 3px solid $color-font-header
+    @media(max-width: 1100px)
+      margin-top: 25px
+      flex-direction: column
+      border: none
+      transition: all .4s linear
+      width: 100%
+
+  ul li
+    color: $color-font-header
+    margin: auto
+    padding: 5px 12px 
+    font-weight: bold
+    min-width: 150px
+    text-align: center
+    position: relative
+    z-index: 50
+    a
+      color: inherit
+      font-size: 17px
+      text-transform: uppercase
+      position: relative
+  .nav-list > li:after
+    content: ""
+    width: 14px
+    height: 14px
+    display: block
+    background: $color-font-header
+    margin-right: auto
+    margin-left: auto
+    border-radius: 50%
+    position: relative
+    top: 13px
+    z-index: 5
+    @media(max-width: 1100px)
+      display: none
+    
+  ul li
+    @media(max-width: 1100px)
+      width: 100%
+      background: $color-header
+
+    &:hover
+      background: $color-font-header
+      color: $color-header
+      .nav-sub-list
+        display: block
+        transform: translateY(0px)
+        transition: transform .6s
+        z-index: 2
+        
+    .nav-sub-list
+      position: absolute 
+      padding-top: 40px
+      left: 0
+      transform: translateY(-350px)
+      @media(max-width: 1100px)
+        left: 150px
+        top: 0
+        padding: 2px
+        margin: 0
+
+      li
+        margin: 10px auto
+        background: $color-header
+        @media(max-width: 1100px)
+          margin: 0
+        &:hover
+          box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3)
+          background: $color-font-header
+
+
+.site-header 
+    img 
+      @media(max-width: 600px)
+        width: 190px
+      
+      @media(max-width: 420px)
+        width: 170px
+
+.site-nav.menu-mobile
+  overflow: none
+  height: auto
+  transition: all .4s linear
+
+
+.toggle
+  display: none
+  width: 40px
+  position: absolute
+  top: 22px
+  right: 10px
+  cursor: pointer
+  @media(max-width: 420px)
+    top: 17px
+  
+
+  span
+    background: $color-font-header
+    display: block
+    height: 5px
+    margin-bottom: 4px
+    transition: .5s
+
+  @media (max-width: 1100px)
+    display: block
+
+.toggle-close
+  span
+    &:nth-child(1)
+      transform: rotate(-45deg) translate(-6px, 6px)
+
+    &:nth-child(2)
+      opacity: 0
+
+    &:nth-child(3)
+      transform: rotate(45deg) translate(-6px, -8px)

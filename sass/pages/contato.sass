@@ -1,0 +1,77 @@
+
+.contact-container
+	background: #fcd720
+	
+	.center
+		display: flex
+		flex-wrap: nowrap
+		
+		.contato-bg
+			width: 530px
+			img
+
+		.contact-form
+			width: 470px
+			padding: 100px 20px 20px 20px
+			
+
+			.contact-title
+				margin-bottom: 40px
+				h2
+					text-align: right
+					color: #4a4d5c
+					font-size: 28px
+					&:before
+      					content: url("../images/flags.svg")
+      					margin-bottom: 15px
+      					display: block
+
+
+			form
+				width: 100%
+ 				
+
+				input,
+				select,
+				textarea
+					width: 100%
+					height: 50px
+					padding: 10px 10px 10px 20px
+					border: 1px solid #5b5439
+					border-radius: 15px
+					background: #fcd720
+					margin-top: 15px
+				
+				select
+					text-transform: uppercase
+					color: #5b5439
+					font-size: 16px
+
+					option
+						color: #5b5439
+						background: #fcd720
+
+						&:hover
+							background: #6f6f6e
+							color: #5b5439
+				textarea
+					height: 130px  
+					resize: vertical;
+				
+				input::-webkit-input-placeholder,
+				textarea::-webkit-input-placeholder	
+					text-transform: uppercase
+					color: #5b5439
+					font-size: 16px
+				
+
+				input[type= "submit"]
+					float: right
+					background: #585857
+					width: 90px
+					height: 40px
+					padding: 10px
+					border-radius: 8px
+					color: #FFF
+					cursor: pointer
+					text-transform: uppercase

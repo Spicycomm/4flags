@@ -1,0 +1,139 @@
+@import "variables";
+
+.happens-in-the-4flags
+	background: #fbbf1f
+	text-transform: uppercase
+
+
+	.section-events
+		background: #FFF
+		border-radius: 15px
+		clear: both
+		display: flex
+		flex-direction: column
+		justify-content: center
+		width: 83%
+		position: relative
+		margin-right: auto
+		margin-left: auto
+		padding: 20px
+		text-transform: none
+		@media(min-width: 1400px)
+			width: 75%
+		
+		&:after
+			content: ""
+			width: 7%
+			height: 100%
+			background: #FFF
+			position: absolute
+			right: -5%
+			@media(max-width: 860px)
+				display: none
+
+		.title-events
+			position: relative
+			bottom: 55px
+			right: 50px
+			padding: 20px
+			@media(max-width: 840px)
+				width: 100%
+				right: 0
+
+			h2
+				color: #FFF
+				background: $color-title-section
+				padding: 15px 20px
+				display: table
+				clear: left
+				border-radius: 15px
+				width: 400px
+				text-align: center
+				font-size: 1.6em
+				@media(max-width: 840px)
+					font-size: 1.2em
+					width: 100%
+					display: block
+
+
+
+.happens-in-the-4flags
+	> .center
+		background: $color-font-header
+		padding-bottom: 50px
+
+.list-events
+
+	.event
+		display: flex
+		margin-bottom: 15px
+		@media(max-width: 840px)
+			flex-wrap: wrap;
+
+		.event-data
+			border-right: 1px solid $color-title-section
+			padding: 10px
+			position: relative
+			width: 33.33%
+			@media(max-width: 840px)
+				width: 100%
+				border: none
+				border-bottom: 1px solid $color-title-section
+
+			.title-event
+				font-size: 1.4em
+				margin-bottom: 8px
+				
+			span
+				display: block
+				position: relative
+				color: $color-font-section
+				font-size: 1.4em
+				@media(max-width: 840px)
+					display: inline
+					position: static
+					margin: 10px 5px
+			.date-event
+				
+			.hour-event
+				top: 10px
+
+		.event-description
+			padding: 10px
+			font-size: 1.25em
+			width: 33.33%
+			@media(max-width: 840px)
+				width: 100%
+				text-align: center
+		
+		.event-image
+			width: 33.33%
+			@media(max-width: 840px)
+				width: 100%
+				text-align: center
+			img
+				max-width: 100%
+				@media(max-width: 840px)
+					width: 80%
+.list-articles.show-more-articles ul li:nth-child(n + 3)
+	display: none
+
+.event .event-image a:nth-child(n + 2)
+	display: none
+
+.view-more
+	color: #FFF
+	float: right
+	margin-right: 4%
+	padding: 30px
+	font-size: 1.4em
+	
+	&:after
+		content: ""
+		border-width: 10px
+		border-style: solid
+		border-color: transparent transparent transparent #FFF
+		border-radius: 2px
+		position: absolute
+		margin-left: 5px
+
