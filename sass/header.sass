@@ -1,4 +1,4 @@
-@import "variables";
+@import "variables"
 
 .site-header
   background: $color-header
@@ -20,7 +20,9 @@
     
   h1
     margin-top: 10px
-
+    a
+      img
+        width: 210px
 .site-nav
   @media(max-width: 1100px)
     transition: all .4s linear
@@ -42,7 +44,7 @@
   ul li
     color: $color-font-header
     margin: auto
-    padding: 5px 12px 
+    padding: 5px 9px
     font-weight: bold
     min-width: 150px
     text-align: center
@@ -50,7 +52,7 @@
     z-index: 50
     a
       color: inherit
-      font-size: 17px
+      font-size: 16px
       text-transform: uppercase
       position: relative
   .nav-list > li:after
@@ -81,12 +83,16 @@
         transform: translateY(0px)
         transition: transform .6s
         z-index: 2
+        @media(max-width: 1100px)
+          position: static
         
     .nav-sub-list
       position: absolute 
       padding-top: 40px
       left: 0
       transform: translateY(-350px)
+      display: block
+      transition: transform .6s
       @media(max-width: 1100px)
         left: 150px
         top: 0
@@ -112,7 +118,7 @@
         width: 170px
 
 .site-nav.menu-mobile
-  overflow: none
+  overflow: hidden
   height: auto
   transition: all .4s linear
 

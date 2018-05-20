@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAEC,yBAAU;EACT,KAAK,EAAE,IAAI;EACX,SAAS,EAAE,MAAM;EACjB,MAAM,EAAE,SAAS;AAElB,2BAAY;EACX,OAAO,EAAE,IAAI;EACb,6CAAiB;IAChB,aAAa,EAAE,IAAI;IACnB,+CAAC;MACA,SAAS,EAAE,MAAM;MACjB,KAAK,EAAE,OAAO;AAGhB,6BAAG;EACF,SAAS,EAAE,IAAI",
+"sources": ["../../sass/pages/dicas.sass"],
+"names": [],
+"file": "dicas.css"
+}

@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,100i,400,900,900i')
+
+.container-course
+	background:
+			color: #ffd800
+	.center
+		background:
+			image: url(../images/triangulo-bg.png), url("../images/curso-online-bg.png")
+			repeat: no-repeat
+			position: top right, left bottom
+			
+
+
+.container-course
+	padding-top: 50px
+	font-family: Roboto
+	
+
+	.header-course
+
+		.header-course-left
+			float: left
+			
+			.course-online-title
+				background: #575756
+				width: 400px
+				height: 60px
+				display: flex
+				align-items: center
+				justify-content: center
+				border-radius: 0 15px 15px 0
+
+				.course-online-item-title
+					color: #ffd800
+					font-weight: 700
+					font-size: 2.8rem
+					text-transform: uppercase
+					span
+						color: #FFF
+						font-weight: 100
+						font-size: 1.8rem
+						font-style: italic
+
+			.course-online-subtitle
+				margin-top: 20px
+				padding-left: 60px
+				text-transform: uppercase
+
+				.course-online-item-subtitle
+					color: #575756
+					font-size: 1.6rem
+					line-height: 28px
+					letter-spacing: 1px
+					font-weight: 700
+
+		
+		.header-course-right
+			width: 400px
+			padding-right: 80px
+			float: right
+			transform: translateY(130px)
+			
+
+			.course-online-title-now
+
+				.course-online-item-title-now
+					color: #575756
+					font-size: 1.6rem
+					text-align: right
+					line-height: 25px
+					letter-spacing: 1px
+
+					&:before
+						content: url("../images/flags.svg")
+						display: block
+						margin-right: 20px
+
+
+
+.body-course
+	margin-top: 150px 
+	padding-top: 160px
+	
+	.body-text
+		width: 380px
+		float: right
+		padding-right: 10px
+		margin-right: 15px
+		p
+			margin-bottom: 22px
+			line-height: 20px
+			font-size: 1rem
+			color: #040300
+ 
+
+.footer-course
+	display: flex
+	justify-content: space-between
+	padding: 25px 0
+	&-left
+		padding-left: 40px
+		color: #575756
+		h5
+			margin-bottom: 10px
+		.footer-course-list
+
+			li
+				font-weight: 600
+				margin-bottom: 5px
+				&:before
+					content: '|'
+					margin-right: 5px
+					font-weight: 600
+
+	&-right
+		display: flex
+		align-items: center
+		width: 350px
+		
+			
+		.btn-href
+			width: 200px
+			height: 40px
+			background: #575756
+			border-radius: 12px
+			color: #FFF
+			text-transform: uppercase
+			text-align: center
+			line-height: 40px
+			cursor: pointer
+			transition: .5s
+
+			&:hover
+				background: #2f3640
+			
+
+		.btn-center
+			margin-right: auto
+			margin-left: auto
+.clearfix
+
+	&:before,
+	&:after
+		content: ''
+		display: table
+
+	&:after
+		clear: both
