@@ -1,0 +1,19 @@
+<!-- Começo do Banner -->
+<section class="banner">
+  <div class="container-full">
+
+  <ngu-carousel #myBanner [inputs]="carouselBanner" class="carousel-banner" [dataSource]="banners">
+    <ngu-tile class="carousel-banner__tile" *nguCarouselDef="let banners; let i = index" [ngStyle]="{ background: banners.colorImage}">
+      <img class="img-responsive" [src]="getUrl(banners.id)" alt="" style="width: 1130px; max-height: 400px; margin: auto">
+    </ngu-tile>
+    <button NguCarouselPrev class="leftRs arrow arrow-block arrow-left"><img class="img-arrow" src="assets/images/icones/arrow-left.svg"></button>
+    <button NguCarouselNext class="rightRs arrow arrow-block arrow-right"><img class="img-arrow" src="assets/images/icones/right-arrow.svg"></button>
+
+    <ul class="dots" NguCarouselPoint>
+      <li class="dots__item" *ngFor="let i of myBanner.pointNumbers; let i = index" [class.active]="i==myBanner.activePoint" (click)="myBanner.moveTo(i)"
+        [style.background]="'url(' + banners[i] + ')'"></li>
+    </ul>
+  </ngu-carousel>
+  </div>
+</section>
+<!-- Fim do Banner -->
